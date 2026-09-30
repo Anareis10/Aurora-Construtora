@@ -1,0 +1,22 @@
+/* FONTE INTER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* FONTE MANROPE*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-Inter: Inter, sans-serif;
+    --font-Manrope: Manrope, sans-serif;
+    --white: white;
+    --marrom-claro: #bd9464;
+    --azul-petroleo: #17242a;
+}
+
+main{
+    
+}

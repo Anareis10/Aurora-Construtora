@@ -17,6 +17,267 @@
     --azul-petroleo: #17242a;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
+    background:linear-gradient(90deg, #050505 0%, rgba(5, 5, 5, 0.86) 0%, rgba(5, 5, 5, 0.18) 75%), linear-gradient(0deg, #050505 0%, transparent 0%), url(./imagem\ de\ fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 100px;
+    position: relative;
+    align-items: center;
+}
+
+.titulo__cabecalho{
+    /* display: flex;
+    flex-direction: column; */
+    color: var(--white);
+    font-family: var(--font-Manrope);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.titulo__cabecalho span{
+    font-family: var(--font-Inter);
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    right: 100px;
+    gap: 30px;
+    align-items: center;
     
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-Inter);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+nav a:hover{
+    color: #bd9464;
+}
+
+.botao:hover{
+    background: var(--white);
+    color: var(--marrom-claro);
+}
+
+.botao{
+    background-color: var(--marrom-claro);
+    padding: 8px 20px;
+}
+
+.container{
+    padding: 70px 50px;
+    display: grid;
+    gap: 3.5rem;
+}
+
+.empresa{
+    color: var(--marrom-claro);
+    font-family: var(--font-Inter);
+    font-weight: 500;
+}
+
+.container h1{
+    font-family: var(--font-Manrope);
+    font-weight: 700;
+    color: var(--white);
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.container span{
+    color: var(--marrom-claro);
+}
+
+.descricao{
+    font-family: var(--font-Inter);
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF99;
+    line-height: 28px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.botao__imovel{
+    text-decoration: none;
+    padding: 16px 32px;
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    background-color: var(--marrom-claro);
+    color: var(--white);
+    letter-spacing: 1.4px;
+    transition: 0.5s ease;
+}
+
+.botao__imovel:hover{
+    background-color: rgba(189, 148, 100, 0.8);
+}
+
+.botao__servico{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--font-Inter);
+    padding: 16px 35px;
+    border: 1px solid var(--white);
+    transition: 0.5s ease;
+}
+
+.botao__servico:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.estatisticas{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-petroleo);
+    width: 100%;
+    height: 10rem;
+}
+
+.dados{
+    color: var(--marrom-claro);
+    font-family: var(--font-Manrope);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.dados span{
+    color: #FFFFFF8C;
+    font-size: 12px;
+    font-family: var(--font-Inter);
+    font-weight: 400;
+}
+
+.quem__somos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    background-color: var(--white);
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 560px;
+    height: 685.5px;
+    
+}
+
+.coluna h1{
+    font-family: var(--font-Manrope);
+    font-size: 48px;
+    color: var(--azul-petroleo);
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.resumo{
+    font-family: var(--font-Inter);
+    font-size: 16px;
+    color: var(--azul-petroleo);
+    line-height: 26px;
+}
+
+.linha__separacao{
+    width: 556px;
+    height: 1px;
+    background: #E8DDD3;
+}
+
+.informacoes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.temas{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.linha__destaque{
+    width: 24px;
+    height: 2px;
+    background-color: var(--marrom-claro);
+}
+
+.temas h2{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    color: var(--azul-petroleo);
+    line-height: 20px;
+    
+    
+}
+
+.temas p{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    color: #8A9BA3;
+    line-height: 19.5px;
+}
+
+.secunda__coluna{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    width: 560px;
+    height: 603px;
+}
+
+.foto__faxada{
+    width: 560px;
+    height: 315px;
+}
+
+.foto__sala,
+.foto__rua{
+    width: 272px;
+    height: auto;
+}
+
+.segunda__linha{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }

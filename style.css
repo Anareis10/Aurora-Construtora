@@ -15,6 +15,9 @@
     --white: white;
     --marrom-claro: #bd9464;
     --azul-petroleo: #17242a;
+    --marrom-bege: #F5F0EB;
+    --bege-claro: #E8DDD3;
+    --cinza-claro: #5A6A72;
 }
 
 html{
@@ -280,4 +283,77 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     gap: 16px;
+}
+
+.servicos{
+    background-color: var(--marrom-bege);
+    height: 100vh;
+}
+
+.titulo__servico{
+    padding: 60px 252px;
+
+}
+
+.titulo__servico h2{
+    font-family: var(--font-Manrope);
+    font-size: 48px;
+    color: var(--azul-petroleo);
+    line-height: 60px;
+    font-weight: 700;
+    width: 672px;
+    height: 120px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 252px;
+   
+}
+
+.card_servico{
+    padding: 32px;
+    background-color: var(--white);
+
+    border-right: 1px solid var(--bege-claro);
+    border-bottom: 1px solid var(--bege-claro);;
+
+}
+
+.card_servico:nth-child(3n){
+    border-right: none;
+
+}
+
+.card_servico:nth-child(n + 4){
+    border-bottom: none;
+}
+
+.numero{
+    font-family: var(--font-Manrope);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--bege-claro);
+    margin: 0px 0px 24px;
+    
+}
+
+.card_servico h3{
+    font-family: var(--font-Manrope);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--azul-petroleo);
+    margin: 0px 0px 12px;
+
+}
+
+.descricao__Servicos{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    color: var(--cinza-claro);
+    font-weight: 400;
+    line-height: 22.8px;
 }

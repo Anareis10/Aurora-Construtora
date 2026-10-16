@@ -357,3 +357,49 @@ nav a:hover{
     font-weight: 400;
     line-height: 22.8px;
 }
+
+.parte__imoveis{
+    height: 100vh;
+    background-color: var(--white);
+
+}
+
+.cabecalho__imoveis{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+
+}
+
+.abas{
+    display: flex;
+    gap: 0;
+    position: absolute;
+    right: 6rem;
+    padding: 60px 252px;
+    top: 29px;
+
+}
+
+.aba{
+    text-decoration: none;
+    font-family: var(--font-Inter);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    color: var(--azul-petroleo);
+    background-color: var(--white);
+    border: 1px solid var(--bege-claro);
+
+}
+
+.imovel[hidden] {
+  display: none;
+}
+
+.aba.ativa {
+  background: var(--marrom-claro);
+  color: var(--white);
+}

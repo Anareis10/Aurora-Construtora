@@ -18,6 +18,9 @@
     --marrom-bege: #F5F0EB;
     --bege-claro: #E8DDD3;
     --cinza-claro: #5A6A72;
+    --azul-acizentado: #8A9BA3;
+    --verde: #2A7A4E;
+
 }
 
 html{
@@ -403,3 +406,184 @@ nav a:hover{
   background: var(--marrom-claro);
   color: var(--white);
 }
+
+.imoveis{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.imovel{
+    display: flex;
+    flex-direction: column;
+    width: 574px;
+    height: 647.5px;
+    position: relative;
+    border: 1px solid var(--marrom-claro);
+
+    transition: box-shadow 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
+    flex-shrink: 0;   /* não deixa o card encolher */
+    overflow: hidden;
+}
+
+.imovel:hover{
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--marrom-claro);
+    transform: translateY(-4px);
+}
+
+.imovel > img{
+    transition: transform 0.6s ease;
+}
+
+.imovel:hover > img{
+    transform: scale(1.05);
+}
+
+.status__lancamento{
+    position: absolute;
+    padding: 4px 12px;
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--marrom-claro);
+    letter-spacing: 0.6px;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+.status__andamento{
+    position: absolute;
+    padding: 4px 12px;
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--verde);
+    letter-spacing: 0.6px;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+.status__entregue{
+    position: absolute;
+    padding: 4px 12px;
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--azul-petroleo);
+    letter-spacing: 0.6px;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+.imovel img{
+    width: 574px;
+    height: 430.5px;
+}
+
+.hero{
+    padding: 24px;
+    width: 574px;
+    height: 217px;
+}
+
+.localizacao{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--marrom-claro);
+    margin: 0px 0px 8px;
+    letter-spacing: 1.2px;
+}
+
+.imovel h3{
+    font-family: var(--font-Manrope);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azul-petroleo);
+    margin: 0px 0px 16px;
+
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.espacamento{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.espacamento img{
+    width: 18px;
+    height: auto;
+
+}
+
+.espacamento p{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--azul-petroleo);
+}
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 526px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--marrom-claro);
+}
+
+.preco{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
+}
+
+.preco h5{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    color: var(--azul-acizentado);
+    margin: 0px 0px 4px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+
+}
+
+.preco p{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    color: var(--azul-petroleo);
+    font-weight: 500;
+
+}
+
+.imovel button{
+    position: static;
+    right: 2rem;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--marrom-claro);
+    font-family: var(--font-Inter);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.12px;
+    cursor: pointer;
+}
+

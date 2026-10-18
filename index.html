@@ -371,6 +371,75 @@
                 </div>
             </article>
         </div>
+
+        <div class="modal" id="modal" hidden>
+            <div class="modal__conteudo" role="dialog" aria-modal="true">
+                <button class="modal__fechar" aria-label="Fechar">x</button>
+
+                <div class="galeria">
+                    <img class="galeria__principal" id="imgPrincipal" src="https://images.unsplash.com/photo-1766603636700-e9d80473f40f?w=800&h=600&fit=crop&auto=format" alt="Residencial Aurora Jardins">
+                    <button class="galeria__seta galeria__seta__prev">‹</button>
+                    <button class="galeria__seta galeria__seta__next">›</button>
+                </div>
+
+                <div class="galeria__miniaturas" id="miniaturas"></div>
+
+                <div class="modal__info">
+                    <div class="titulo__modal">
+                        <div class="primeira__coluna">
+                            <p id="modalLocalizacao" class="situacao"></p>
+                            <h2 id="modalTitulo"></h2>
+                        </div>
+
+                        <div class="previsao">
+                            <p class="previsao">PREVISÃO DE ENTRAGA</p>
+                            <h5 id="data"></h5>
+                        </div>
+                    </div>
+
+                    <div class="quadrados">
+                        <div class="individual">
+                            <img src="./quarto.png" alt="quarto">
+                            <p class="numero__quarto" id="quarto"></p>
+                            <p class="nome__quarto">QUARTO</p>
+                        </div>
+
+                        <div class="individual">
+                            <img src="./plans.png" alt="planta">
+                            <p class="numero__quarto" id="metrosQuadrado"></p>
+                            <p class="nome__quarto">ÁREA PRIVATIVA</p>
+                        </div>
+
+                        <div class="individual">
+                            <img src="./car.png" alt="vagas">
+                            <p class="numero__quarto" id="vagas"></p>
+                            <p class="nome__quarto">Vagas</p>
+                        </div>  
+                    </div>
+
+                    <div class="informacao__imovel">
+                        <div class="descricao__imovel">
+                            <h3 class="tituloImovel">SOBRE O IMÓVEL</h3>
+                            <p id="sobreImovel"></p>
+                            <div class="linha__unidade">
+                                <i></i>
+                                <p id="quantidade" class="quantidade__imovel"></p>
+                            </div>
+                        </div>
+
+                        <div class="descricao__bairro">
+                            <h3 class="titulobairro">BAIRRO & REGIÃO</h3>
+                            <p id="sobreBairro"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="coontato">
+                        <a href="#" class="btn">FALAR PELO WHATSAPP</a>
+                        <a href="#" class="entrar__contato">ENTRAR EM CONTATO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="./script.js"></script>

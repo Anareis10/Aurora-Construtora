@@ -616,8 +616,8 @@ nav a:hover{
     position: relative;
     background: var(--white);
     width: 100%;
-    max-width: 860px;
-
+    width: 1024px;
+    height: 1482px; 
 }
 
 .modal__fechar{
@@ -625,7 +625,17 @@ nav a:hover{
     top: 12px;
     right: 12px;
     z-index: 2;
+    font-size: 16px;
+    background-color: var(--white);
+    height: 40px;
+    width: 40px;
+    color: var(--azul-petroleo);
+    border: none;
+    cursor: pointer;
+}
 
+.modal__fechar:hover{
+    background-color: rgb(241, 241, 241);
 }
 
 .galeria{
@@ -635,7 +645,7 @@ nav a:hover{
 
 .galeria__principal{
     width: 100%;
-    height: 420px;
+    height: 576px;
     object-fit: cover;
     display: block;
 
@@ -645,7 +655,17 @@ nav a:hover{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 40px;
+    width: 40px;
+    color: var(--azul-petroleo);
+    border: none;
+    cursor: pointer;
+}
 
+.galeria__seta:hover{
+    background-color: rgba(241, 241, 241, 0.7);
 }
 
 .galeria__seta__prev{
@@ -661,26 +681,231 @@ nav a:hover{
 .galeria__miniaturas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 4px;
-    margin-top: 4px;
+    gap: 8px;
+    background-color: var(--marrom-bege);
+    padding: 16px;
+    
 
 }
 
 .galeria__miniaturas img{
-    width: 100%;
-    height: 80px;
+    width: 242px;
+    height: 136px;
     object-fit: cover;
     cursor: pointer;
-    opacity: 0.6;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid transparent;
+    padding: 3px;
+    transition: border-color 0.3s ease;
 
 }
 
 .galeria__miniaturas img.ativa{
-    opacity: 1;
-
+    border-color: var(--marrom-claro);
+    
 }
 
 body.modal__aberto{
     overflow: hidden;
     
+}
+
+.modal__info{
+    background-color: var(--white);
+    position: relative;
+    padding: 48px;
+}
+
+.titulo__modal{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 32px;
+    padding: 0px 0px 32px;
+    border-bottom: 1px solid var(--bege-claro);
+}
+
+.primeira__coluna{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.situacao{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    color: var(--marrom-claro);
+    margin: 0px 0px 8px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.primeira__coluna h2{
+    font-family: var(--font-Manrope);
+    font-size: 30px;
+    color: var(--azul-petroleo);
+    font-weight: 700;
+
+}
+
+.previsao{
+    position: absolute;
+    right: 48px;
+}
+
+.previsao__entrega{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    color: var(--azul-acizentado);
+    margin: 0px 0px 4px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+
+}
+
+.previsao h5{
+    font-family: var(--font-Inter);
+    font-size: 18px;
+    color: var(--azul-petroleo);
+    font-weight: 500;
+    text-align: right;
+}
+
+.quadrados{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.individual{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bege-claro);
+    padding: 24px 0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 293px;
+    height: 128px;
+}
+
+.individual img{
+    width: 18px;
+    height: 18px;
+    margin: 0px 0px 8px;
+}
+
+.numero__quarto{
+    font-family: var(--font-Manrope);
+    font-size: 24px;
+    color: var(--azul-petroleo);
+    margin: 0px 0px 4px;
+    font-weight: 700;
+}
+
+.nome__quarto{
+    font-family: var(--font-Inter);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--azul-acizentado);
+    
+}
+
+.informacao__imovel{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.tituloImovel{
+    font-family: var(--font-Inter);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--marrom-claro);
+    margin: 0px 0px 16px;
+    padding: 0px 0px 12px;
+    border-bottom: 1px solid var(--bege-claro);
+    letter-spacing: 1.4px;
+    width: 444px;
+    height: 33px;
+}
+
+.sobre__imovel{
+    font-family: var(--font-Inter);
+    font-size: 16px;
+    color: var(--azul-petroleo);
+    font-weight: 400;
+    width: 444px;
+    line-height: 26px;
+}
+
+.linha__unidade{
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0px 0px;
+    align-items: center;
+    gap: 7px;
+}
+
+.linha__unidade i{
+    height: 1px;
+    width: 32px;
+    background-color: var(--marrom-claro);
+}
+
+.quantidade__imovel{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    color: var(--azul-acizentado);
+}
+
+.titulobairro{
+    font-family: var(--font-Inter);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--marrom-claro);
+    margin: 0px 0px 16px;
+    padding: 0px 0px 12px;
+    border-bottom: 1px solid var(--bege-claro);
+    letter-spacing: 1.4px;
+    width: 444px;
+    height: 33px;
+}
+
+.descricao__bairro{
+    font-family: var(--font-Inter);
+    font-size: 16px;
+    color: var(--azul-petroleo);
+    font-weight: 400;
+    width: 444px;
+    line-height: 26px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.whatsapp{
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    padding: 16px 32px;
+    background-color: var(--marrom-claro);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.entrar__contato{
+    text-decoration: none;
+    border: 1px solid var(--marrom-claro);
+    padding: 16px 32px;
+    font-family: var(--font-Inter);
+    font-size: 14px;
+    color: var(--marrom-claro);
 }

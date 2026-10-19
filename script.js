@@ -18,10 +18,10 @@ abas.forEach(aba => {
 filtrar('lancamento');
 
 
-// Dados dos imóveis (as chaves têm o mesmo nome dos ids do HTML)
+
 const dados = {
   'aurora__jardins': {
-    modalLocalizacao: 'Lançamento · Jardim das Acácias, São Paulo',
+    modalLocalizacao: 'LANÇAMENTO · JARDIM DAS ACÁCIAS, SÃO PAULO',
     modalTitulo: 'Residencial Aurora Jardins',
     data: 'Dezembro 2026',
     quarto: '4',
@@ -39,18 +39,20 @@ const dados = {
   },
 
   'aurora__reserva': {
-    modalLocalizacao: 'Lançamento · Alphaville, Barueri',
+    modalLocalizacao: 'LANÇAMENTO · ALPHAVILLE, BARUERI',
     modalTitulo: 'Condomínio Aurora Reserva',
     data: 'Junho 2027',
     quarto: '5',
     metrosQuadrado: '350 m²',
     vagas: '4',
-    sobreImovel: 'Texto sobre o Condomínio Aurora Reserva.',
+    sobreImovel: 'Aurora Reserva é um condomínio exclusivo com apenas 32 casas em lotes amplos de até 800m². Integração total entre áreas internas e externas, piscina privativa opcional, adega climatizada e espaço gourmet são alguns dos diferenciais desta joia imobiliária.',
     quantidade: '32 unidades no condomínio',
-    sobreBairro: 'Texto sobre Alphaville e região.',
+    sobreBairro: 'Alphaville é sinônimo de qualidade de vida e segurança. O bairro planejado oferece infraestrutura completa com escolas internacionais, centros empresariais, parques e shopping centers, tudo em um ambiente arborizado e controlado.',
     fotos: [
       'https://images.unsplash.com/photo-1745761320791-5ae142edee8c?w=1200&h=800&fit=crop&auto=format',
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format'
+      'https://images.unsplash.com/photo-1649083048770-82e8ffd80431?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format',
     ]
   },
 
@@ -61,12 +63,14 @@ const dados = {
     quarto: '3',
     metrosQuadrado: '210 m²',
     vagas: '2',
-    sobreImovel: 'Texto sobre o Aurora Parque Ville.',
+    sobreImovel: 'Aurora Parque Ville tem obras em ritmo acelerado com previsão de entrega para abril de 2025. São 64 casas com conceito aberto, amplas varandas, cozinha gourmet americana e área de lazer completa com piscina, academia e quadra esportiva.',
     quantidade: '60 unidades no condomínio',
-    sobreBairro: 'Texto sobre a Granja Viana e região.',
+    sobreBairro: 'Granja Viana é um dos endereços mais procurados da Grande São Paulo. Rodeado por mata atlântica preservada, o bairro oferece uma qualidade de ar única e vida tranquila, a apenas 30 minutos do centro de São Paulo pela Raposo Tavares.',
     fotos: [
       'https://images.unsplash.com/photo-1685514823717-7e1ff6ee0563?w=1200&h=800&fit=crop&auto=format',
-      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&h=800&fit=crop&auto=format'
+      'https://images.unsplash.com/photo-1555636222-cae831e670b3?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&h=800&fit=crop&auto=format',
     ]
   },
 
@@ -77,44 +81,50 @@ const dados = {
     quarto: '4',
     metrosQuadrado: '260 m²',
     vagas: '2',
-    sobreImovel: 'Texto sobre o Aurora Monte Verde.',
+    sobreImovel: 'Inserido em uma das regiões mais valorizadas da capital, o Aurora Monte Verde traz arquitetura contemporânea em harmonia com o verde. Casas com pé-direito duplo, janelas do chão ao teto e sistema de captação solar tornam este projeto referência em sustentabilidade e conforto.',
     quantidade: '40 unidades no condomínio',
-    sobreBairro: 'Texto sobre o Morumbi e região.',
+    sobreBairro: 'O Morumbi é um bairro nobre que combina vida urbana sofisticada com verde e tranquilidade. Próximo ao Parque Estadual das Fontes do Ipiranga, conta com excelente acesso viário, escolas de elite e forte valorização imobiliária histórica.',
     fotos: [
       'https://images.unsplash.com/photo-1760129745103-91c4022ed5fb?w=1200&h=800&fit=crop&auto=format',
-      'https://images.unsplash.com/photo-1724582586529-62622e50c0b3?w=1200&h=800&fit=crop&auto=format'
+      'https://images.unsplash.com/photo-1724582586529-62622e50c0b3?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&h=800&fit=crop&auto=format',
     ]
   },
 
   'aurora__bosque': {
     modalLocalizacao: 'Entregue · Tamboré, Santana de Parnaíba',
     modalTitulo: 'Aurora Bosque Imperial',
-    data: 'Entregue em 2024',
+    data: 'Entregue em 2023',
     quarto: '4',
     metrosQuadrado: '300 m²',
     vagas: '3',
-    sobreImovel: 'Texto sobre o Aurora Bosque Imperial.',
+    sobreImovel: 'Entregue em 2023 com 100% das unidades comercializadas antes do prazo, Aurora Bosque Imperial é um dos empreendimentos mais bem-sucedidos da Aurora Construtora. O condomínio tornou-se referência regional em qualidade de entrega, padrão construtivo e valorização imobiliária.',
     quantidade: '56 unidades vendidas',
-    sobreBairro: 'Texto sobre o Tamboré e região.',
+    sobreBairro: 'Tamboré é um condomínio residencial planejado de altíssimo padrão em Santana de Parnaíba. Com infraestrutura completa, segurança reforçada e um dos índices de qualidade de vida mais altos do estado, é um dos endereços mais cobiçados da Grande São Paulo.',
     fotos: [
       'https://images.unsplash.com/photo-1756064173162-326c8e85215d?w=1200&h=800&fit=crop&auto=format',
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format'
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1649083048770-82e8ffd80431?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1784412955063-a0d202cc60bd?w=1200&h=800&fit=crop&auto=format',
     ]
   },
 
   'aurora__vila': {
     modalLocalizacao: 'Entregue · Vila Madalena, São Paulo',
     modalTitulo: 'Aurora Vila Serena',
-    data: 'Entregue em 2023',
+    data: 'Entregue em 2022',
     quarto: '3',
     metrosQuadrado: '195 m²',
     vagas: '2',
-    sobreImovel: 'Texto sobre o Aurora Vila Serena.',
-    quantidade: '24 unidades vendidas',
-    sobreBairro: 'Texto sobre a Vila Madalena e região.',
+    sobreImovel: 'Aurora Vila Serena foi o primeiro projeto da construtora no segmento premium urbano. Com arquitetura que dialoga com a identidade cultural do bairro, as casas possuem terraço com churrasqueira, home office e integração ao comércio local.',
+    quantidade: '28 unidades vendidas',
+    sobreBairro: 'Vila Madalena é um dos bairros mais vibrantes e valorizados de São Paulo. Conhecida por sua cena cultural, gastronomia diversa e vida noturna animada, oferece uma experiência urbana única com o charme de bairro residencial.',
     fotos: [
       'https://images.unsplash.com/photo-1784900864232-7de1c1525db0?w=1200&h=800&fit=crop&auto=format',
-      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&h=800&fit=crop&auto=format'
+      'https://images.unsplash.com/photo-1724582586529-62622e50c0b3?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&h=800&fit=crop&auto=format',
     ]
   }
 };

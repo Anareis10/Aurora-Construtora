@@ -899,6 +899,11 @@ body.modal__aberto{
     background-color: var(--marrom-claro);
     color: var(--white);
     text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.whatsapp:hover{
+    background-color: rgba(189, 148, 100, 0.9);
 }
 
 .entrar__contato{
@@ -908,4 +913,9 @@ body.modal__aberto{
     font-family: var(--font-Inter);
     font-size: 14px;
     color: var(--marrom-claro);
+    transition: 0.5s ease;
+}
+
+.entrar__contato:hover{
+    background-color: rgba(189, 148, 100, 0.1);
 }

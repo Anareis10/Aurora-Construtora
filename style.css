@@ -972,3 +972,113 @@ body.modal__aberto{
 .informacao a:hover{
     background-color: rgba(189, 148, 100, 0.9);
 }
+
+.formulario{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    background-color: var(--azul-petroleo);
+    padding: 128px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes__contato{
+    display: flex;
+    flex-direction: column;
+    width: 556px;
+    height: 516px;
+
+}
+
+.margem{
+    margin: 0px 0px 16px;
+}
+
+.informacoes__contato h2{
+    color: var(--white);
+    font-family: var(--font-Manrope);
+    margin: 0px 0px 32px;
+    font-size: 48px;
+
+}
+
+.consultores{
+    font-family: var(--font-Inter);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px 48px;
+    color: #FFFFFFD9;
+}
+
+.formas{
+    width: 556px;
+    height: 232px;
+
+}
+
+.telefone{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 24px;
+    border-left: 2px solid var(--marrom-claro);
+    color: var(--marrom-claro);
+    padding: 0px 10px;
+    text-transform: uppercase;
+}
+
+.titulo{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 0px 4px;
+    letter-spacing: 1.2px;
+
+}
+
+.sub__titulo{
+    font-family: var(--font-Inter);
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFFD9;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--white);
+
+}
+
+form h3{
+    font-family: var(--font-Manrope);
+    font-size: 20px;
+    margin: 0px 0px 32px;
+    color: var(--azul-petroleo);
+
+}
+
+.barras{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px;
+
+}
+
+label{
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 0px 8px;
+    color: var(--azul-acizentado);
+
+}
+
+.barra{
+    text-decoration: none;
+    padding: 12px 16px;
+    background-color: var(--white);
+    border: 1px solid var(--bege-claro);
+    font-family: var(--font-Inter);
+}
